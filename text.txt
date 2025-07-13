@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PoliScan – Webové Demo</title>
+  <style>
+    body {
+      font-family: "Segoe UI", sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f5f7fa;
+      color: #333;
+    }
+    header {
+      background: #0056a4;
+      color: white;
+      padding: 1rem 2rem;
+    }
+    h1 {
+      margin: 0;
+      font-size: 1.8rem;
+    }
+    main {
+      padding: 2rem;
+    }
+    .section {
+      background: white;
+      padding: 1.5rem;
+      border-radius: 8px;
+      margin-bottom: 1.5rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+    label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+    }
+    input[type="text"],
+    textarea {
+      width: 100%;
+      padding: 0.7rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    button {
+      background: #0056a4;
+      color: white;
+      padding: 0.7rem 1.2rem;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #003d7a;
+    }
+    footer {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #777;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>PoliScan – Webové Demo</h1>
+  </header>
+  <main>
+    <div class="section">
+      <h2>🔍 Hledat osobu</h2>
+      <label for="search">Zadejte jméno nebo popis:</label>
+      <input type="text" id="search" placeholder="Např. Jan Novák, tetování, brýle…" />
+      <button onclick="alert('Vyhledávání zatím není propojeno.')">Hledat</button>
+    </div>
+
+    <div class="section">
+      <h2>🧍 Přidat osobu do databáze</h2>
+      <label for="name">Jméno:</label>
+      <input type="text" id="name" placeholder="Např. Jan Novák" />
+
+      <label for="desc">Popis osoby:</label>
+      <textarea id="desc" rows="4" placeholder="Např. muž, cca 185 cm, světlé vlasy, modré oči…"></textarea>
+
+      <button onclick="alert('Záznam zatím není uložen.')">Uložit záznam</button>
+    </div>
+
+    <div class="section">
+      <h2>ℹ️ O aplikaci</h2>
+      <p>PoliScan je ukázková webová aplikace pro práci s databází osob – identifikace, hledaní a bezpečnostní nástroje.</p>
+      <p>Toto demo slouží jako vizuální základ pro budoucí vývoj iOS / Android verze a správu přes web.</p>
+    </div>
+  </main>
+
+  <footer>
+    &copy; 2025 Roman Apps – PoliScan
+  </footer>
+</body>
+</html>
